@@ -106,8 +106,10 @@ main { margin-left: var(--sidebar); padding-top: 76px; overflow: hidden; }
 .complete:has(input:checked) { background: #effbf5; border-color: #90d5b7; color: var(--mint-dark); }
 .source-grid { display: grid; gap: 10px; margin: 24px 0; }
 .source-grid div { display: grid; grid-template-columns: 190px 1fr; gap: 14px; padding: 15px 18px; background: var(--pale); border-radius: 16px; }
-.source-grid b { color: var(--purple-dark); }
+.source-grid b, .source-resource-link { color: var(--purple-dark); }
 .source-grid span { color: var(--muted); }
+.source-resource-link { width: fit-content; min-height: 44px; display: inline-flex; align-items: center; font-weight: 800; text-underline-offset: 4px; text-decoration-thickness: 2px; }
+.source-resource-link:hover { color: var(--purple); }
 
 .prompt-card { border: 1px solid var(--line); background: var(--pale); border-radius: 26px; padding: 22px; min-width: 0; }
 .prompt-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; color: var(--purple-dark); font-weight: 800; margin-bottom: 14px; }
