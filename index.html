@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#7655d9">
+  <meta name="description" content="NotebookLM × 國小綜合活動領域教師實作工作坊操作網站">
+  <title>NotebookLM × 國小綜合活動教師工作坊</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要內容</a>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="回到頁首">
+      <span class="brand-mark">N</span>
+      <span><b>NotebookLM</b><small>教師實作工作坊</small></span>
+    </a>
+    <div class="top-actions">
+      <div class="progress-mini" aria-live="polite"><span id="topProgress">0%</span> 完成</div>
+      <button class="ghost-button" id="printBtn" type="button">列印學習紀錄</button>
+      <button class="menu-button" id="menuBtn" type="button" aria-expanded="false" aria-controls="sideNav">課程選單</button>
+    </div>
+  </header>
+
+  <aside class="sidebar" id="sideNav" aria-label="課程導覽">
+    <div class="progress-card">
+      <div class="progress-label"><b>我的研習進度</b><span id="progressText">0／7</span></div>
+      <div class="progress-track" aria-hidden="true"><span id="progressBar"></span></div>
+      <p>勾選每個單元的完成任務，進度會保留在這台裝置。</p>
+    </div>
+    <nav>
+      <a href="#overview"><span>00</span>研習地圖</a>
+      <a href="#module-1"><span>01</span>建立筆記本</a>
+      <a href="#module-2"><span>02</span>匯入與理解教材</a>
+      <a href="#module-3"><span>03</span>教材心智圖</a>
+      <a href="#module-4"><span>04</span>AI 協作教案</a>
+      <a href="#module-5"><span>05</span>教學資源製作</a>
+      <a href="#module-6"><span>06</span>核心概念影片</a>
+      <a href="#module-7"><span>07</span>成果分享與反思</a>
+    </nav>
+    <div class="sidebar-note">介面名稱與功能可能因帳號、裝置及版本而不同，請以現場畫面為準。</div>
+  </aside>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <span class="eyebrow">150 分鐘｜教師實作工作坊</span>
+        <h1>從教材理解到<br><em>AI 協作教學設計</em></h1>
+        <p>跟著七個單元操作，完成教材分析、心智圖、教案、簡報、學習單、測驗與核心概念影片。</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#overview">開始研習</a>
+          <a class="secondary-button" href="https://notebooklm.google.com/" target="_blank" rel="noreferrer">開啟 NotebookLM</a>
+        </div>
+        <div class="level-switch" aria-label="選擇學習路徑">
+          <span>我的操作路徑</span>
+          <button class="level-btn active" data-level="beginner" type="button">初階跟做</button>
+          <button class="level-btn" data-level="advanced" type="button">進階挑戰</button>
+        </div>
+      </div>
+      <img src="assets/hero.png" alt="教師運用數位筆記本製作心智圖、教案、簡報、測驗與影片" class="hero-image">
+    </section>
+
+    <section class="section overview" id="overview">
+      <div class="section-heading">
+        <span class="eyebrow">研習地圖</span>
+        <h2>一本教材，七段轉化歷程</h2>
+        <p>共同示範單元為「五年級綜合活動：情緒覺察、同理與關懷」。完成共同任務後，再換成自己的教材。</p>
+      </div>
+      <div class="journey" role="list">
+        <a href="#module-1" role="listitem"><b>01</b><span>建立筆記本<small>15 分</small></span></a>
+        <a href="#module-2" role="listitem"><b>02</b><span>教材理解<small>20 分</small></span></a>
+        <a href="#module-3" role="listitem"><b>03</b><span>心智圖<small>15 分</small></span></a>
+        <a href="#module-4" role="listitem"><b>04</b><span>教案設計<small>25 分</small></span></a>
+        <a href="#module-5" role="listitem"><b>05</b><span>資源製作<small>35 分</small></span></a>
+        <a href="#module-6" role="listitem"><b>06</b><span>概念影片<small>20 分</small></span></a>
+        <a href="#module-7" role="listitem"><b>07</b><span>成果反思<small>20 分</small></span></a>
+      </div>
+      <div class="principle-strip">
+        <div><b>理解</b><span>AI 協助整理，教師負責判斷</span></div>
+        <div><b>生成</b><span>AI 先做草稿，教師修改成可教版本</span></div>
+        <div><b>查核</b><span>看引用、回原文、做判斷</span></div>
+      </div>
+    </section>
+
+    <section class="module section" id="module-1" data-module="1">
+      <div class="module-copy">
+        <span class="module-number">單元 01 · 15 分鐘</span>
+        <h2>建立第一本教學筆記本</h2>
+        <p class="lead">先熟悉「來源、對話、工作室」三個區域，後續操作才不會迷路。</p>
+        <ol class="steps">
+          <li><b>開啟網站</b><span>登入 Google 帳號，建立新筆記本。</span></li>
+          <li><b>命名筆記本</b><span>輸入「五年級綜合活動－情緒覺察與同理」。</span></li>
+          <li><b>辨識三區</b><span>來源用來選教材；對話用來提問；工作室用來產生成果。</span></li>
+        </ol>
+        <div class="callout"><b>現場提醒</b>介面可能顯示 NotebookLM 或 Gemini Notebook，請以功能位置為準。</div>
+        <label class="complete"><input type="checkbox" data-complete="1"><span>我已建立筆記本並找到三個操作區域</span></label>
+      </div>
+      <div class="visual-card compact"><img src="assets/sources.png" alt="文件、網站、影片與教材匯入數位筆記本"></div>
+    </section>
+
+    <section class="module section reverse" id="module-2" data-module="2">
+      <div class="module-copy">
+        <span class="module-number">單元 02 · 20 分鐘</span>
+        <h2>匯入與理解教材</h2>
+        <p class="lead">來源品質會直接影響回答與教學資源品質。先上傳可信、必要且有權使用的材料。</p>
+        <div class="source-grid">
+          <div><b>教科書／教師手冊</b><span>掌握單元內容與活動脈絡</span></div>
+          <div><b>課綱相關內容</b><span>核對學習表現與學習內容</span></div>
+          <div><b>SEL／校本資源</b><span>補充情緒覺察與同理情境</span></div>
+        </div>
+        <div class="safety-note"><b>上傳前先匿名化</b><span>移除學生個資、家長聯絡資料、帳號密碼與未公開研究資料。</span></div>
+        <div class="task-card level beginner-task">
+          <span>初階任務</span><b>找出教材的 3 個核心概念，並各寫一句學生能理解的說明。</b>
+        </div>
+        <div class="task-card level advanced-task" hidden>
+          <span>進階挑戰</span><b>檢查教材活動是否對應學習目標，指出來源證據與需要補強之處。</b>
+        </div>
+        <label class="complete"><input type="checkbox" data-complete="2"><span>我已上傳來源並完成教材理解摘要</span></label>
+      </div>
+      <div class="prompt-card">
+        <div class="prompt-head"><span>提示詞｜教材全貌</span><button type="button" class="copy-btn">複製提示詞</button></div>
+        <pre>請根據我上傳的教材，分析本單元的核心概念、主要學習目標、學生需要具備的先備知識，以及可能遇到的學習困難。
+
+請以表格呈現，並在每一項分析後標示資料來源。若資料來源沒有提供明確資訊，請標示「待教師確認」，不要自行補寫。</pre>
+        <div class="check-row"><span>查核 1｜回答是否由引用段落支持？</span><span>查核 2｜是否適合學生與現場條件？</span></div>
+      </div>
+    </section>
+
+    <section class="module section" id="module-3" data-module="3">
+      <div class="module-copy">
+        <span class="module-number">單元 03 · 15 分鐘</span>
+        <h2>用心智圖看見概念關係</h2>
+        <p class="lead">心智圖不是答案，而是幫助教師檢視概念、順序與教材缺口的視覺工具。</p>
+        <ol class="steps">
+          <li><b>選取來源</b><span>只勾選這次要分析的教材。</span></li>
+          <li><b>產生心智圖</b><span>依現場介面，從心智圖功能開始生成。</span></li>
+          <li><b>展開與追問</b><span>點選節點後，針對該概念繼續提問。</span></li>
+        </ol>
+        <div class="concept-flow" aria-label="示範概念序列">
+          <span>辨識情緒</span><span>表達感受</span><span>理解他人</span><span>同理回應</span><span>關懷行動</span>
+        </div>
+        <div class="task-card level beginner-task"><span>初階任務</span><b>圈出 3 個核心概念，點開其中 1 個節點追問。</b></div>
+        <div class="task-card level advanced-task" hidden><span>進階挑戰</span><b>把概念分成課前、課中、課後，並寫出排序理由。</b></div>
+        <label class="complete"><input type="checkbox" data-complete="3"><span>我已檢查心智圖與原始教材的差異</span></label>
+      </div>
+      <div class="visual-card"><img src="assets/mindmap.png" alt="從教材長出多個概念分支的心智圖"></div>
+    </section>
+
+    <section class="module section reverse" id="module-4" data-module="4">
+      <div class="module-copy">
+        <span class="module-number">單元 04 · 25 分鐘</span>
+        <h2>從教材分析走向教案設計</h2>
+        <p class="lead">教案要形成學習證據鏈：目標、活動、證據與評量彼此對應。</p>
+        <div class="evidence-chain">
+          <div><b>學習目標</b><span>學生最後要能做到什麼</span></div>
+          <div><b>學習活動</b><span>學生會經歷哪些體驗</span></div>
+          <div><b>學習證據</b><span>從哪裡看出正在學會</span></div>
+          <div><b>評量方式</b><span>如何回饋與調整教學</span></div>
+        </div>
+        <details class="checklist" open>
+          <summary>教師修改 AI 教案的五項檢核</summary>
+          <ul><li>目標清楚且可觀察</li><li>情境貼近學生生活</li><li>活動時間可行且人人有任務</li><li>評量能看見學習成果</li><li>保留體驗、省思與實踐</li></ul>
+        </details>
+        <label class="complete"><input type="checkbox" data-complete="4"><span>我已對 AI 教案做至少一項人工修改</span></label>
+      </div>
+      <div class="prompt-stack">
+        <div class="prompt-card">
+          <div class="prompt-head"><span>提示詞｜兩節課教案</span><button type="button" class="copy-btn">複製提示詞</button></div>
+          <pre>請根據上傳的五年級綜合活動教材，設計一份兩節課、每節 40 分鐘的教學活動。
+
+主題為「情緒覺察與同理」。內容需包含學習目標、引起動機、發展活動、綜合活動、形成性評量與教學資源。請為每項活動標示時間及可觀察的學習證據。
+
+若來源未提供課綱代碼，請標示「待教師確認」，不要自行編造。</pre>
+        </div>
+        <div class="prompt-card level advanced-task" hidden>
+          <div class="prompt-head"><span>進階提示詞｜差異化支持</span><button type="button" class="copy-btn">複製提示詞</button></div>
+          <pre>請維持相同學習目標，分別提供三種學習支持。每一種都要說明：教師如何引導、學生要做什麼、完成的證據是什麼。不要用能力標籤描述學生。</pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="module section" id="module-5" data-module="5">
+      <div class="module-copy wide-copy">
+        <span class="module-number">單元 05 · 35 分鐘</span>
+        <h2>製作簡報、學習單與測驗</h2>
+        <p class="lead">每一份生成內容都要經過三次檢查：來源是否正確、語言是否適合年級、活動是否能在課堂執行。</p>
+      </div>
+      <img src="assets/resources.png" alt="教師製作簡報、學習單與測驗" class="section-image">
+      <div class="resource-tabs" role="tablist" aria-label="教學資源類型">
+        <button type="button" role="tab" aria-selected="true" data-tab="slides">教學簡報</button>
+        <button type="button" role="tab" aria-selected="false" data-tab="worksheet">學習單</button>
+        <button type="button" role="tab" aria-selected="false" data-tab="quiz">測驗與評量</button>
+      </div>
+      <div class="tab-panels">
+        <article role="tabpanel" data-panel="slides">
+          <h3>簡報操作</h3><p>工作室 → 簡報／Slide Deck → 設定格式、語言、長度與焦點 → 生成後修訂。</p>
+          <div class="prompt-card"><div class="prompt-head"><span>提示詞｜五年級教學簡報</span><button type="button" class="copy-btn">複製提示詞</button></div><pre>請將本單元轉化為適合國小五年級的教學簡報，以生活情境引起動機，加入情緒辨識、同理回應與小組討論活動。使用臺灣繁體中文，內容簡潔，最後加入反思問題。</pre></div>
+        </article>
+        <article role="tabpanel" data-panel="worksheet" hidden>
+          <h3>學習單設計</h3><p>讓學生留下思考痕跡，並保留足夠書寫空間。生成後再到文件工具調整版面。</p>
+          <div class="prompt-card"><div class="prompt-head"><span>提示詞｜A4 學習單</span><button type="button" class="copy-btn">複製提示詞</button></div><pre>請根據教材設計一份適合五年級學生的 A4 學習單，包含情境閱讀、情緒辨識、同理回應與生活實踐四個部分。題目需引導學生說明理由，避免只有填空與記憶性問題。請保留足夠書寫空間。</pre></div>
+        </article>
+        <article role="tabpanel" data-panel="quiz" hidden>
+          <h3>測驗與表現任務</h3><p>選擇題可檢查理解；綜合活動還需要情境判斷、開放反思與行動任務。</p>
+          <div class="prompt-card"><div class="prompt-head"><span>提示詞｜情境評量</span><button type="button" class="copy-btn">複製提示詞</button></div><pre>請根據教材設計 5 道題目。至少一半使用校園生活情境，避免只考名詞記憶；每題都要提供答案說明與來源。另加 1 題開放式反思題及 1 項一週內可完成的行動任務。</pre></div>
+          <blockquote>當你發現同學因為小組分工而感到失落，你可以怎麼做？請描述具體回應並說明理由。</blockquote>
+        </article>
+      </div>
+      <div class="task-row">
+        <div class="task-card level beginner-task"><span>初階任務</span><b>完成一份教學簡報與 5 道測驗題。</b></div>
+        <div class="task-card level advanced-task" hidden><span>進階挑戰</span><b>完成簡報、學習單、情境題與評分規準。</b></div>
+        <label class="complete"><input type="checkbox" data-complete="5"><span>我已完成並人工檢查一組教學資源</span></label>
+      </div>
+    </section>
+
+    <section class="module section reverse" id="module-6" data-module="6">
+      <div class="module-copy">
+        <span class="module-number">單元 06 · 20 分鐘</span>
+        <h2>核心概念影片進入課堂</h2>
+        <p class="lead">影片只是媒介；觀看前的提問、觀看中的觀察與觀看後的行動，才會形成學習。</p>
+        <div class="watch-cycle">
+          <div><b>觀看前</b><span>同理心和同情心有什麼不同？</span></div>
+          <div><b>觀看中</b><span>主角做了什麼，讓對方感到被理解？</span></div>
+          <div><b>觀看後</b><span>提出一個明天能做到的同理行動。</span></div>
+        </div>
+        <div class="callout"><b>備用方案</b>影片生成可能需要較長時間，研習前先準備一個完成版本。播放前務必完整看過。</div>
+        <label class="complete"><input type="checkbox" data-complete="6"><span>我已設計影片觀看前、中、後任務</span></label>
+      </div>
+      <div class="prompt-stack">
+        <div class="visual-card"><img src="assets/video.png" alt="教材轉化成校園核心概念解說影片"></div>
+        <div class="prompt-card"><div class="prompt-head"><span>提示詞｜同理心影片</span><button type="button" class="copy-btn">複製提示詞</button></div><pre>請以國小五年級學生能理解的語言，說明「同理心」的核心概念。使用校園生活情境，呈現理解他人感受與採取關懷行動的重要性，避免抽象說教。</pre></div>
+      </div>
+    </section>
+
+    <section class="module section reflection" id="module-7" data-module="7">
+      <div class="module-copy">
+        <span class="module-number">單元 07 · 20 分鐘</span>
+        <h2>展示我的教學資源包</h2>
+        <p class="lead">選擇最有價值的一項成果，用兩分鐘說明教學問題、人工修改與課堂應用。</p>
+        <div class="reflection-form">
+          <label>NotebookLM 幫助我重新理解教材的哪個部分？<textarea rows="3" data-note="q1" placeholder="在這裡記錄……"></textarea></label>
+          <label>哪一項 AI 生成資源最能協助我的教學？<textarea rows="3" data-note="q2" placeholder="在這裡記錄……"></textarea></label>
+          <label>哪些教學決策仍需要教師自己完成？<textarea rows="3" data-note="q3" placeholder="在這裡記錄……"></textarea></label>
+        </div>
+        <label class="complete"><input type="checkbox" data-complete="7"><span>我已完成作品分享與一項帶回課堂的行動</span></label>
+      </div>
+      <div class="closing-panel">
+        <img src="assets/reflection.png" alt="教師們分享完成的教學資源">
+        <blockquote>讓 AI 協助教師整理知識，讓教師專注設計學習。</blockquote>
+        <button class="primary-button" id="summaryBtn" type="button">查看我的研習成果</button>
+      </div>
+    </section>
+
+    <section class="section sources-section" aria-labelledby="sourceTitle">
+      <h2 id="sourceTitle">使用提醒與官方資料</h2>
+      <div class="source-links">
+        <a href="https://support.google.com/gemininotebook/answer/16206563" target="_blank" rel="noreferrer"><b>建立筆記本</b><span>Google 官方說明</span></a>
+        <a href="https://support.google.com/gemininotebook/answer/16215270" target="_blank" rel="noreferrer"><b>加入來源</b><span>格式與限制</span></a>
+        <a href="https://support.google.com/gemininotebook/answer/16212283" target="_blank" rel="noreferrer"><b>心智圖</b><span>生成與互動</span></a>
+        <a href="https://support.google.com/gemininotebook/answer/16757456" target="_blank" rel="noreferrer"><b>簡報</b><span>生成與修訂</span></a>
+        <a href="https://support.google.com/gemininotebook/answer/16958963" target="_blank" rel="noreferrer"><b>測驗與學習卡</b><span>設定與練習</span></a>
+        <a href="https://support.google.com/gemininotebook/answer/16454555" target="_blank" rel="noreferrer"><b>影片摘要</b><span>格式與限制</span></a>
+      </div>
+      <p>NotebookLM 仍可能產生不正確內容。引用能協助回查，但不能代替教師判斷。功能可用性、名稱、生成額度與分享方式可能依帳號、年齡、裝置及版本而不同。</p>
+    </section>
+  </main>
+
+  <dialog id="summaryDialog">
+    <button class="dialog-close" type="button" aria-label="關閉">×</button>
+    <span class="eyebrow">我的研習成果</span>
+    <h2>已完成 <span id="dialogCount">0</span>／7 個單元</h2>
+    <div id="dialogList" class="dialog-list"></div>
+    <p>回到課堂前，再查核一次來源、學生適切性與個資安全。</p>
+    <button class="primary-button" type="button" id="dialogPrint">列印或存成 PDF</button>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">已複製提示詞</div>
+  <script src="app.js"></script>
+</body>
+</html>
